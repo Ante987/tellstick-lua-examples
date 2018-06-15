@@ -4,23 +4,23 @@ HUMIDITY = 2							-- Sensor type flag for humidity
 SCALE_HUMIDITY_PERCENT = 0				-- Sensor scale flag for humidity percent
 
 -- Reference sensor
-local sensor_ref = "te Hall" 			-- Name of referens sensor
+local sensor_ref = "***" 			-- Name of referens sensor
 
 -- Must have value 
-local sensor_trigg = "te Badrum Uppe" 	-- Name of trigger sensor nr 1 (Required)
-local relay = "fa Badrum Uppe" 			-- Name of switch nr 1 (Required)
+local sensor_trigg = "***"		 	-- Name of trigger sensor nr 1 (Required)
+local relay = "***" 				-- Name of switch nr 1 (Required)
 
 -- Optional
 -- Add XXX to shutdown function fan 2
-local sensor_trigg2 = "te Badrum Nere"	-- Name of trigger sensor nr 2 (Optional)
-local relay2 = "fa Badrum Nere"			-- Name of switch nr 2 (Optional)
+local sensor_trigg2 = "***"			-- Name of trigger sensor nr 2 (Optional)
+local relay2 = "***"				-- Name of switch nr 2 (Optional)
 
 -- Settings
-local trigger = 15        				-- Trigger value
-local adjust1 = 0                       -- For local differens
-local adjust2 = 10                      -- Adjust differense between sensors 
-local debug = false						-- Print debug data to console
-local verbose = false					-- Print even more debug data
+local trigger = 15				-- Trigger value
+local adjust1 = 0            		        -- For local differens
+local adjust2 = 10           		        -- Adjust differense between sensors 
+local debug = false				-- Print debug data to console
+local verbose = false				-- Print even more debug data
 local sensor_trigg_value = 0
 local sensor_trigg2_value = 0
 local sensor_ref_value = 0
