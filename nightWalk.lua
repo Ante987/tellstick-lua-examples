@@ -1,23 +1,23 @@
 -- Turns on set of light and turn off after set time
 
 -- Define your device and settings here:
-local trigger = "sw Bel Sovrum"		-- Name of the trigger
+local trigger = "***"			-- Name of the trigger
 -- Optional
-local trigger2 = "ms Sovrum"		-- Name of trigger
-local trigger3 = "ms Entre"			-- Name of trigger
+local trigger2 = "***"			-- Name of trigger
+local trigger3 = "***"			-- Name of trigger
 -- Condition to running
-local condition = "vd Lights Out"	-- Name of condition device
+local condition = "***"			-- Name of condition device
 -- Devices to turn on, DIM or ON/OFF
 -- If device is dimmable then it will dim to level specified else it turn on.
-local device1 = "sw Bed Blue"		-- Name of device
+local device1 = "***"			-- Name of device
 -- Optional
-local device2 = "sw Trapp Blue"		-- Name of device
-local device3 = "sw Bel KB"			-- Name of device
+local device2 = "***"			-- Name of device
+local device3 = "***"			-- Name of device
 -- Time to turn off
-local delay_minutes = 5				-- Delay in minutes
-local delay_seconds = 0				-- Delay in seconds
+local delay_minutes = 5			-- Delay in minutes
+local delay_seconds = 0			-- Delay in seconds
 -- Dim level if possible
-local dim_level = 7					-- Dim level in %
+local dim_level = 7			-- Dim level in %
 
 ------ Do not change below ------
 local deviceManager = require "telldus.DeviceManager"
@@ -30,7 +30,7 @@ local dev_device2 = deviceManager:findByName(device2)
 local dev_device3 = deviceManager:findByName(device3)
 local dev_dim_level = dim_level * 2.55
 local running = false
-local debug = true					-- Print debug data to console
+local debug = true			-- Print debug data to console
 
 function onDeviceStateChanged(device, state, stateValue)
 	if device:state() ~= 1 then
